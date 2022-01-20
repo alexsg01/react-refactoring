@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
+import { FoodProps } from '../../interfaces/FoodProps';
 
-export const Container = styled.div`
+export const Container = styled.div<Pick<FoodProps, 'available'>>`
   background: #f0f0f5;
   border-radius: 8px;
 
